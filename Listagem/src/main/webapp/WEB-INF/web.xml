@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>listagemController</servlet-name>
+  	<display-name>listagemController</display-name>
+  	<description></description>
+  	<servlet-class>listagem.controller.listagemController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>listagemDao</servlet-name>
+  	<display-name>listagemDao</display-name>
+  	<description></description>
+  	<servlet-class>listagem.dao.listagemDao</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>listagem</servlet-name>
+  	<display-name>listagem</display-name>
+  	<description></description>
+  	<servlet-class>listagem.model.listagem</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>listagemController</servlet-name>
+  	<url-pattern>/listagemController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>listagemDao</servlet-name>
+  	<url-pattern>/listagemDao</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>listagem</servlet-name>
+  	<url-pattern>/listagem</url-pattern>
+  </servlet-mapping>
+</web-app>
